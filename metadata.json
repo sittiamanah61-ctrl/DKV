@@ -1,0 +1,6 @@
+{
+  "name": "DKV X Studio - Pembelajaran Desain Komunikasi Visual Kelas 10",
+  "description": "Platform pembelajaran interaktif DKV Kelas 10: Modul Prinsip Desain, Tipografi, Nirmana, Teori Warna, Desain Poster, Video Kreatif, Daily Asesmen, Portofolio Siswa, Game Desain, dan Dasbor Guru.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

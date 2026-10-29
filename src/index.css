@@ -1,0 +1,57 @@
+@import "tailwindcss";
+
+@layer base {
+  body {
+    font-family: 'Plus Jakarta Sans', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    background-color: #fafaf9;
+    color: #1c1917;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, .font-heading {
+    font-family: 'Bricolage Grotesque', sans-serif;
+  }
+
+  .font-sketch {
+    font-family: 'Caveat', cursive;
+  }
+}
+
+/* Notebook Graph Paper Grid Pattern matching user attachment */
+.bg-grid-notebook {
+  background-size: 28px 28px;
+  background-image: 
+    linear-gradient(to right, rgba(203, 213, 225, 0.45) 1px, transparent 1px),
+    linear-gradient(to bottom, rgba(203, 213, 225, 0.45) 1px, transparent 1px);
+}
+
+.bg-dots-pattern {
+  background-image: radial-gradient(rgba(148, 163, 184, 0.4) 1.5px, transparent 1.5px);
+  background-size: 20px 20px;
+}
+
+/* Vector Selection Handles & Anchor Point Styles */
+.vector-handle {
+  width: 9px;
+  height: 9px;
+  border: 1.5px solid #0f172a;
+  background-color: #ffffff;
+  position: absolute;
+  pointer-events: none;
+}
+
+/* Custom scrollbars for clean UI */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #f1f5f9;
+}
+::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 9999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #94a3b8;
+}
