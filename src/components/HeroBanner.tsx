@@ -84,7 +84,7 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onNavigate, unlockedBadg
           <div className="pt-2 flex items-center gap-4 text-xs text-stone-500 font-mono">
             <span>Prestasi Siswa: <strong className="text-stone-800">{unlockedBadgesCount} Lencana Aktif</strong></span>
             <span>·</span>
-            <span>Pengampu: Ibu Sitti Amanah, S.Pd., M.Sn.</span>
+            <span>Pengampu: Ibu Sitti Saadah Al amanah, S.Kom</span>
           </div>
         </div>
 

@@ -250,7 +250,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                     <div className="flex items-center justify-between">
                       <div className="flex items-center gap-1.5 text-xs font-bold text-emerald-950">
                         <Award className="w-4 h-4 text-emerald-600" />
-                        <span>Evaluasi Pengajar (Ibu Sitti Amanah)</span>
+                        <span>Evaluasi Pengajar (Ibu Sitti Saadah Al amanah, S.Kom)</span>
                       </div>
                       {activeModalWork.grade && (
                         <span className="text-xs font-black font-mono text-emerald-800 bg-emerald-200/60 px-2 py-0.5 rounded">

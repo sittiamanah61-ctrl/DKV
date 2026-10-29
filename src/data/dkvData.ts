@@ -214,7 +214,7 @@ export const INITIAL_SCHEDULES: PracticeSchedule[] = [
     time: '07.30 - 10.30 WIB',
     subject: 'Praktik Manual Nirmana Dwimatra & Tekstur Rupa',
     room: 'Studio Gambar Manual (Lt. 2)',
-    instructor: 'Ibu Sitti Amanah, S.Pd., M.Sn.',
+    instructor: 'Ibu Sitti Saadah Al amanah, S.Kom',
     toolsNeeded: ['Kertas Bristol A3', 'Drawing Pen (0.1, 0.3, 0.5, 0.8)', 'Penggaris Segitiga Baja', 'Penghapus Karet'],
     maxCapacity: 36,
     currentBooked: 32,
@@ -240,7 +240,7 @@ export const INITIAL_SCHEDULES: PracticeSchedule[] = [
     time: '08.00 - 11.00 WIB',
     subject: 'Studio Dasar Fotografi Produk & Teori Pencahayaan Tiga Titik',
     room: 'Studio Fotografi & Green Screen (Lt. 1)',
-    instructor: 'Ibu Sitti Amanah, S.Pd., M.Sn.',
+    instructor: 'Ibu Sitti Saadah Al amanah, S.Kom',
     toolsNeeded: ['Kamera DSLR / Mirrorless Studio', 'Tripod', 'Produk Objek Kemasan Siswa'],
     maxCapacity: 24,
     currentBooked: 20,
@@ -307,7 +307,7 @@ export const INITIAL_FORUM_POSTS: ForumPost[] = [
     replies: [
       {
         id: 'rep-1',
-        author: 'Ibu Sitti Amanah (Guru DKV)',
+        author: 'Ibu Sitti Saadah Al amanah, S.Kom (Guru DKV)',
         isTeacher: true,
         content: 'Trik terbaik: tempelkan selotip kertas atau uang koin di bawah penggaris dekat tepinya agar ada celah udara (jarak elevasi) antara penggaris dan kertas. Jadi tinta drawing pen tidak akan tertarik masuk ke bawah penggaris secara kapiler.',
         createdAt: 'Kemarin, 15:10',
@@ -317,7 +317,7 @@ export const INITIAL_FORUM_POSTS: ForumPost[] = [
         id: 'rep-2',
         author: 'Nabila Syahrani',
         isTeacher: false,
-        content: 'Betul kata Bu Sitti! Aku pakai koin 500 perak di balik penggaris segitiga, hasilnya bersih banget garisnya nggak ada yang belepotan lagi.',
+        content: 'Betul kata Bu Sitti Saadah! Aku pakai koin 500 perak di balik penggaris segitiga, hasilnya bersih banget garisnya nggak ada yang belepotan lagi.',
         createdAt: 'Kemarin, 16:05',
         likes: 6
       }
@@ -371,7 +371,7 @@ export const INITIAL_VIDEOS: VideoCreative[] = [
     duration: '18:45',
     thumbnail: '/assets/images/poster_swiss_reference_1793273438057.jpg',
     videoEmbedId: '7xXp8y19qZw',
-    mentor: 'Ibu Sitti Amanah, S.Pd., M.Sn.',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom',
     description: 'Analisis mendalam karya-karya legendaris Josef Müller-Brockmann dan Emil Ruder. Cara membuat modular grid dan hierarki teks yang berwibawa.',
     timestamps: [
       { time: '00:00', topic: 'Sejarah Swiss Style (International Typographic)' },
@@ -387,7 +387,7 @@ export const INITIAL_VIDEOS: VideoCreative[] = [
     duration: '12:10',
     thumbnail: '/assets/images/nirmana_dwimatra_visual_1793273438692.jpg',
     videoEmbedId: 'k4Pz9e8v1Lk',
-    mentor: 'Ibu Sitti Amanah, S.Pd., M.Sn.',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom',
     description: 'Proses kreatif pembuatan nirmana ritme gelombang. Mulai dari penentuan modul satuan bentuk, pergeseran sudut rotasi, hingga finishing tinta yang tajam.',
     timestamps: [
       { time: '00:00', topic: 'Konsep Irama & Repetisi' },

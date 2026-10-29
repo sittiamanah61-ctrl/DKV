@@ -337,7 +337,7 @@ export const DailyAssessment: React.FC<DailyAssessmentProps> = ({ onAssessmentCo
             <div className="p-4 bg-emerald-50 border border-emerald-200 rounded-xl text-emerald-900 text-xs flex items-center justify-between">
               <div className="flex items-center gap-2">
                 <Check className="w-4 h-4 text-emerald-600" />
-                <span>Jawaban esai Anda telah berhasil dikirimkan ke <strong>Dasbor Guru (Ibu Sitti Amanah)</strong> untuk proses penilaian kualitatif & feedback.</span>
+                <span>Jawaban esai Anda telah berhasil dikirimkan ke <strong>Dasbor Guru (Ibu Sitti Saadah Al amanah, S.Kom)</strong> untuk proses penilaian kualitatif & feedback.</span>
               </div>
               <span className="font-mono text-emerald-700 bg-emerald-100 px-2 py-0.5 rounded text-[11px]">Tersimpan di Dasbor</span>
             </div>

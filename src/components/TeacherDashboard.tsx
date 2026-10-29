@@ -201,7 +201,7 @@ export const TeacherDashboard: React.FC<TeacherDashboardProps> = ({
           <div className="text-center mb-6">
             <h3 className="font-heading font-bold text-xl text-stone-900">Akses Dasbor Guru DKV</h3>
             <p className="text-xs text-stone-500 mt-1">
-              Khusus guru pengampu (Ibu Sitti Amanah & Tim DKV). Masukkan PIN keamanan untuk memantau progres dan memberi umpan balik tugas.
+              Khusus guru pengampu (Ibu Sitti Saadah Al amanah, S.Kom & Tim DKV). Masukkan PIN keamanan untuk memantau progres dan memberi umpan balik tugas.
             </p>
           </div>
 
@@ -258,7 +258,7 @@ export const TeacherDashboard: React.FC<TeacherDashboardProps> = ({
             </span>
           </div>
           <p className="text-xs text-stone-500 mt-1">
-            Pengampu: Ibu Sitti Amanah, S.Pd., M.Sn. · SMK Negeri Kompetensi Keahlian DKV
+            Pengampu: Ibu Sitti Saadah Al amanah, S.Kom · SMK Negeri Kompetensi Keahlian DKV
           </p>
         </div>
 
