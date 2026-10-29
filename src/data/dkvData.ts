@@ -350,50 +350,102 @@ export const INITIAL_FORUM_POSTS: ForumPost[] = [
 export const INITIAL_VIDEOS: VideoCreative[] = [
   {
     id: 'vid-1',
-    title: 'Mastering Pen Tool: Rahasia Mengendalikan Kurva Bezier Tanpa Pusing',
-    category: 'Vektor & Ilustrasi',
-    duration: '14:20',
-    thumbnail: '/assets/images/typography_anatomy_sheet_1793273438888.jpg',
-    videoEmbedId: 'm4XgP8u7R5Y',
-    mentor: 'Bpk. Hendra Wijaya, S.Ds.',
-    description: 'Kupas tuntas filosofi titik jangkar (anchor point), pegangan arah (direction handles), dan cara membuat kurva S yang mulus dengan sesedikit mungkin titik.',
+    title: 'Prinsip-Prinsip Dasar Desain Grafis (Beginning Graphic Design: Fundamentals)',
+    category: 'Prinsip Desain',
+    duration: '06:25',
+    thumbnail: 'https://img.youtube.com/vi/YqQx75OPWA0/hqdefault.jpg',
+    videoEmbedId: 'YqQx75OPWA0',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom & GCF Global',
+    description: 'Mempelajari 5 elemen fundamental desain grafis: Garis (Line), Bentuk (Shape), Wujud (Form), Tekstur (Texture), dan Keseimbangan (Balance) dalam perancangan media rupa.',
     timestamps: [
-      { time: '00:00', topic: 'Pengenalan Vektor vs Raster' },
-      { time: '03:15', topic: 'Titik Sudut vs Titik Halus' },
-      { time: '08:40', topic: 'Latihan Menjiplak Huruf Organik' },
-      { time: '12:10', topic: 'Shortcut Efisiensi Kerja' }
+      { time: '00:00', topic: 'Pengantar 5 Elemen Dasar Desain' },
+      { time: '01:10', topic: 'Garis (Line) dan Arah Visual' },
+      { time: '02:25', topic: 'Bentuk Geometris vs Organis' },
+      { time: '03:40', topic: 'Tekstur & Kesan Taktil' },
+      { time: '05:00', topic: 'Keseimbangan Simetris & Asimetris' }
     ]
   },
   {
     id: 'vid-2',
-    title: 'Bedah Desain Poster Swiss Grid: Mengapa Komposisinya Begitu Memikat?',
-    category: 'Tata Letak & Grid',
-    duration: '18:45',
-    thumbnail: '/assets/images/poster_swiss_reference_1793273438057.jpg',
-    videoEmbedId: '7xXp8y19qZw',
-    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom',
-    description: 'Analisis mendalam karya-karya legendaris Josef Müller-Brockmann dan Emil Ruder. Cara membuat modular grid dan hierarki teks yang berwibawa.',
+    title: 'Anatomi & Tips Memilih Tipografi (Beginning Graphic Design: Typography)',
+    category: 'Tipografi',
+    duration: '06:24',
+    thumbnail: 'https://img.youtube.com/vi/sByzHoiYFX0/hqdefault.jpg',
+    videoEmbedId: 'sByzHoiYFX0',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom & GCF Global',
+    description: 'Panduan lengkap anatomi huruf, perbedaan Serif vs Sans-Serif, Display, Script, serta pengaturan Kerning, Leading, Tracking, dan Hierarki visual teks.',
     timestamps: [
-      { time: '00:00', topic: 'Sejarah Swiss Style (International Typographic)' },
-      { time: '04:30', topic: 'Struktur Baris & Kolom Grid' },
-      { time: '10:15', topic: 'White Space sebagai Nafas Desain' },
-      { time: '15:20', topic: 'Kritik Desain Poster Siswa' }
+      { time: '00:00', topic: 'Definisi Tipografi & Karakter Huruf' },
+      { time: '01:30', topic: 'Klasifikasi: Serif, Sans-Serif, Script' },
+      { time: '03:10', topic: 'Hirarki Visual & Ukuran Judul' },
+      { time: '04:20', topic: 'Leading (Spasi Baris) & Tracking' },
+      { time: '05:30', topic: 'Kesalahan Umum Tipografi Pemula' }
     ]
   },
   {
     id: 'vid-3',
-    title: 'Nirmana Garis & Ilusi Optik: Dari Kertas Gambar Menuju Seni Digital',
-    category: 'Nirmana & Seni Murni',
-    duration: '12:10',
-    thumbnail: '/assets/images/nirmana_dwimatra_visual_1793273438692.jpg',
-    videoEmbedId: 'k4Pz9e8v1Lk',
-    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom',
-    description: 'Proses kreatif pembuatan nirmana ritme gelombang. Mulai dari penentuan modul satuan bentuk, pergeseran sudut rotasi, hingga finishing tinta yang tajam.',
+    title: 'Teori Warna & Harmoni Kromatik (Beginning Graphic Design: Color)',
+    category: 'Teori Warna',
+    duration: '07:11',
+    thumbnail: 'https://img.youtube.com/vi/_2LLXnUdUIc/hqdefault.jpg',
+    videoEmbedId: '_2LLXnUdUIc',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom & GCF Global',
+    description: 'Pahami roda warna (Color Wheel), konsep Hue, Saturation, Value, serta cara membuat skema warna Monokromatik, Analogous, Komplementer, dan Triadik.',
     timestamps: [
-      { time: '00:00', topic: 'Konsep Irama & Repetisi' },
-      { time: '03:20', topic: 'Gradasi Ukuran & Jarak' },
-      { time: '07:45', topic: 'Teknik Tinta Anti-Cacat' },
-      { time: '10:30', topic: 'Dokumentasi untuk Portofolio' }
+      { time: '00:00', topic: 'Roda Warna & Istilah Hue, Saturation, Value' },
+      { time: '02:00', topic: 'Harmoni Monokromatik & Analog' },
+      { time: '03:30', topic: 'Harmoni Komplementer & Triadik' },
+      { time: '05:10', topic: 'Keterbacaan Kontras Warna' },
+      { time: '06:15', topic: 'Tips Memilih Palet Warna Proyek' }
+    ]
+  },
+  {
+    id: 'vid-4',
+    title: 'Tata Letak, Grid & Komposisi Poster (Layout & Composition)',
+    category: 'Desain Poster',
+    duration: '05:15',
+    thumbnail: 'https://img.youtube.com/vi/a5KYlHNKQB8/hqdefault.jpg',
+    videoEmbedId: 'a5KYlHNKQB8',
+    mentor: 'Ibu Sitti Saadah Al amanah, S.Kom & GCF Global',
+    description: '5 prinsip utama tata letak: Kedekatan (Proximity), Ruang Negatif (White Space), Penjajaran (Alignment), Kontras, dan Pengulangan (Repetition).',
+    timestamps: [
+      { time: '00:00', topic: 'Fungsi Tata Letak dalam Komunikasi Visual' },
+      { time: '01:05', topic: 'Kedekatan (Proximity) Informasi' },
+      { time: '02:10', topic: 'Pentingnya Ruang Kosong (White Space)' },
+      { time: '03:20', topic: 'Penjajaran (Alignment) Modular Grid' },
+      { time: '04:15', topic: 'Kontras & Hirarki Perhatian 3 Detik' }
+    ]
+  },
+  {
+    id: 'vid-5',
+    title: 'Tutorial Dasar Menguasai Pen Tool Adobe Illustrator untuk Vektor',
+    category: 'Pen Tool & Vektor',
+    duration: '08:35',
+    thumbnail: 'https://img.youtube.com/vi/h7Yiy7sYHsY/hqdefault.jpg',
+    videoEmbedId: 'h7Yiy7sYHsY',
+    mentor: 'Bpk. Hendra Wijaya, S.Ds. & Dansky',
+    description: 'Teknik dasar pen tool: cara membuat titik jangkar (anchor point), menarik garis lengkung bezier mulus, dan mengontrol arah handle kurva.',
+    timestamps: [
+      { time: '00:00', topic: 'Pengenalan Titik Jangkar & Kurva' },
+      { time: '02:15', topic: 'Menarik Handle Arah Simetris' },
+      { time: '04:40', topic: 'Mengubah Titik Halus Menjadi Titik Sudut' },
+      { time: '06:50', topic: 'Latihan Menjiplak Bentuk Dasar Vektor' }
+    ]
+  },
+  {
+    id: 'vid-6',
+    title: 'Trik Mengendalikan Kurva Bezier Seperti Pro (Pen Tool Clock Method)',
+    category: 'Pen Tool & Vektor',
+    duration: '10:12',
+    thumbnail: 'https://img.youtube.com/vi/kLd1JvTa9Gk/hqdefault.jpg',
+    videoEmbedId: 'kLd1JvTa9Gk',
+    mentor: 'Bpk. Hendra Wijaya, S.Ds. & Dansky',
+    description: 'Metode jam (clock method) untuk menempatkan titik anchor pada posisi paling efisien agar bentuk vektor tidak patah dan mudah diedit.',
+    timestamps: [
+      { time: '00:00', topic: 'Filosofi Minimalisir Anchor Points' },
+      { time: '02:40', topic: 'Penerapan Clock Method pada Huruf O & S' },
+      { time: '05:50', topic: 'Shortcut Alt / Option untuk Mematahkan Handle' },
+      { time: '08:30', topic: 'Finishing Path Vektor Presisi Tinggi' }
     ]
   }
 ];

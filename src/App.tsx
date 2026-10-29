@@ -298,7 +298,7 @@ export default function App() {
                     }}
                     className="px-4 py-2 text-xs font-bold text-stone-300 bg-stone-800 rounded-lg hover:bg-stone-700 transition-colors"
                   >
-                    Kaidah Warna 60-30-10
+                    Color Palette Studio (Roda Warna)
                   </button>
                 </div>
 
@@ -460,7 +460,7 @@ export default function App() {
                     : 'text-stone-600 hover:text-stone-900 hover:bg-stone-100'
                 }`}
               >
-                3. Harmoni Warna & Mockup Poster
+                3. Color Palette Studio Interaktif
               </button>
             </div>
 
