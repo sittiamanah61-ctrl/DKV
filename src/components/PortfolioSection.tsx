@@ -24,7 +24,7 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
   const [newClass, setNewClass] = useState<'X DKV 1' | 'X DKV 2'>('X DKV 1');
   const [newCategory, setNewCategory] = useState<'Nirmana' | 'Tipografi' | 'Poster' | 'Vektor' | 'Warna'>('Nirmana');
   const [newDescription, setNewDescription] = useState<string>('');
-  const [newImagePreview, setNewImagePreview] = useState<string>('/src/assets/images/nirmana_dwimatra_visual_1793273438692.jpg');
+  const [newImagePreview, setNewImagePreview] = useState<string>('/assets/images/nirmana_dwimatra_visual_1793273438692.jpg');
 
   const categories = ['Semua', 'Nirmana', 'Tipografi', 'Poster', 'Vektor'];
 
@@ -128,6 +128,13 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                 src={work.image}
                 alt={work.title}
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.includes('/src/assets/')) {
+                    target.src = target.src.replace('/src/assets/', '/assets/');
+                  }
+                }}
                 className="w-full h-full object-cover transition-transform duration-500 group-hover:scale-105"
               />
 
@@ -210,6 +217,12 @@ export const PortfolioSection: React.FC<PortfolioSectionProps> = ({
                   alt={activeModalWork.title}
                   className="w-full h-full object-cover"
                   referrerPolicy="no-referrer"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.includes('/src/assets/')) {
+                      target.src = target.src.replace('/src/assets/', '/assets/');
+                    }
+                  }}
                 />
               </div>
 

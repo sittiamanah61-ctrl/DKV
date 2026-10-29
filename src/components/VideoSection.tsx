@@ -41,6 +41,13 @@ export const VideoSection: React.FC = () => {
                 alt={video.title}
                 className="w-full h-full object-cover opacity-85 group-hover:scale-105 transition-transform duration-500"
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.includes('/src/assets/')) {
+                    target.src = target.src.replace('/src/assets/', '/assets/');
+                  }
+                }}
               />
               <div className="absolute inset-0 bg-black/30 flex items-center justify-center group-hover:bg-black/20 transition-colors">
                 <div className="w-12 h-12 rounded-full bg-white/90 text-stone-900 flex items-center justify-center shadow-lg group-hover:scale-110 transition-transform">
@@ -108,6 +115,12 @@ export const VideoSection: React.FC = () => {
                 alt="Player"
                 className="w-full h-full object-cover opacity-60"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.includes('/src/assets/')) {
+                    target.src = target.src.replace('/src/assets/', '/assets/');
+                  }
+                }}
               />
               <div className="absolute inset-0 flex flex-col items-center justify-center text-center p-6 bg-gradient-to-t from-black/80 via-black/30 to-black/60">
                 <div className="w-16 h-16 rounded-full bg-emerald-500 text-white flex items-center justify-center shadow-xl animate-pulse mb-3">

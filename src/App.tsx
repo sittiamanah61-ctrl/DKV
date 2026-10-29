@@ -45,7 +45,18 @@ export default function App() {
   // Persistence State
   const [studentWorks, setStudentWorks] = useState<StudentWork[]>(() => {
     const saved = localStorage.getItem('dkv_student_works');
-    return saved ? JSON.parse(saved) : INITIAL_STUDENT_WORKS;
+    if (saved) {
+      try {
+        const parsed: StudentWork[] = JSON.parse(saved);
+        return parsed.map(w => ({
+          ...w,
+          image: w.image.replace('/src/assets/images/', '/assets/images/')
+        }));
+      } catch (e) {
+        console.error(e);
+      }
+    }
+    return INITIAL_STUDENT_WORKS;
   });
 
   const [tasks, setTasks] = useState<TaskNotification[]>(() => {
@@ -208,6 +219,13 @@ export default function App() {
                         alt={mod.title}
                         className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
                         referrerPolicy="no-referrer"
+                        loading="lazy"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src.includes('/src/assets/')) {
+                            target.src = target.src.replace('/src/assets/', '/assets/');
+                          }
+                        }}
                       />
                       <span className="absolute top-2 left-2 text-[10px] font-mono bg-black/75 text-white px-2 py-0.5 rounded">
                         {mod.badge}
@@ -362,6 +380,13 @@ export default function App() {
                         alt={work.title}
                         className="w-full h-full object-cover"
                         referrerPolicy="no-referrer"
+                        loading="lazy"
+                        onError={(e) => {
+                          const target = e.currentTarget;
+                          if (target.src.includes('/src/assets/')) {
+                            target.src = target.src.replace('/src/assets/', '/assets/');
+                          }
+                        }}
                       />
                       {work.grade && (
                         <span className="absolute top-2 right-2 bg-black/80 text-white font-mono text-[10px] px-2 py-0.5 rounded">

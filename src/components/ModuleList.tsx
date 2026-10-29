@@ -69,6 +69,13 @@ export const ModuleList: React.FC<ModuleListProps> = ({ onNavigateToStudio, setA
                 src={mod.image}
                 alt={mod.title}
                 referrerPolicy="no-referrer"
+                loading="lazy"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.includes('/src/assets/')) {
+                    target.src = target.src.replace('/src/assets/', '/assets/');
+                  }
+                }}
                 className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
               />
               <div className="absolute top-2.5 left-2.5 bg-black/75 backdrop-blur-xs text-white text-[10px] font-mono px-2 py-0.5 rounded">
@@ -145,6 +152,12 @@ export const ModuleList: React.FC<ModuleListProps> = ({ onNavigateToStudio, setA
                 alt={selectedModule.title}
                 className="w-full h-full object-cover"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (target.src.includes('/src/assets/')) {
+                    target.src = target.src.replace('/src/assets/', '/assets/');
+                  }
+                }}
               />
             </div>
 

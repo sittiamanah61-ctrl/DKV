@@ -502,6 +502,13 @@ export const TeacherDashboard: React.FC<TeacherDashboardProps> = ({
                   alt={work.title}
                   className="w-24 h-24 object-cover rounded-lg border border-stone-200 shrink-0"
                   referrerPolicy="no-referrer"
+                  loading="lazy"
+                  onError={(e) => {
+                    const target = e.currentTarget;
+                    if (target.src.includes('/src/assets/')) {
+                      target.src = target.src.replace('/src/assets/', '/assets/');
+                    }
+                  }}
                 />
                 <div className="flex-1">
                   <span className="text-[10px] uppercase font-mono text-emerald-700 bg-emerald-50 px-1.5 py-0.5 rounded">

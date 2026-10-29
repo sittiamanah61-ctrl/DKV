@@ -98,6 +98,12 @@ export const HeroBanner: React.FC<HeroBannerProps> = ({ onNavigate, unlockedBadg
                 alt="Desain Grafis Studio DKV"
                 className="w-full h-auto object-contain"
                 referrerPolicy="no-referrer"
+                onError={(e) => {
+                  const target = e.currentTarget;
+                  if (!target.src.includes('/assets/aistudio/')) {
+                    target.src = '/assets/aistudio/image_e92f0533.png';
+                  }
+                }}
               />
 
               {/* Bounding box guide overlaid */}
