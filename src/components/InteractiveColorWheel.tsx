@@ -19,6 +19,7 @@ import {
   Layers
 } from 'lucide-react';
 import confetti from 'canvas-confetti';
+import { FlyerDesignPrinciplePanel } from './FlyerDesignPrinciplePanel.tsx';
 
 interface ColorNode {
   id: number;
@@ -403,8 +404,31 @@ export const InteractiveColorWheel: React.FC = () => {
     confetti({ particleCount: 25, spread: 50 });
   };
 
+  const handleSelectPresetColors = (hexes: string[]) => {
+    setColors(prev => prev.map((node, i) => {
+      if (!hexes[i]) return node;
+      const rgb = hexToRgb(hexes[i]);
+      const max = Math.max(rgb.r, rgb.g, rgb.b);
+      const min = Math.min(rgb.r, rgb.g, rgb.b);
+      let h = 0;
+      if (max !== min) {
+        const d = max - min;
+        if (max === rgb.r) h = (rgb.g - rgb.b) / d + (rgb.g < rgb.b ? 6 : 0);
+        else if (max === rgb.g) h = (rgb.b - rgb.r) / d + 2;
+        else h = (rgb.r - rgb.g) / d + 4;
+        h *= 60;
+      }
+      return {
+        ...node,
+        hex: hexes[i],
+        hue: Math.round((h + 360) % 360)
+      };
+    }));
+  };
+
   return (
-    <div className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
+    <div className="space-y-8">
+      <div className="bg-white rounded-2xl border border-stone-200 overflow-hidden shadow-sm">
       {/* Top Header Mode Tabs matching screenshot */}
       <div className="px-6 py-3 border-b border-stone-200 flex items-center justify-between bg-white">
         <div className="flex items-center gap-8 text-sm font-medium">
@@ -827,6 +851,13 @@ export const InteractiveColorWheel: React.FC = () => {
           </div>
         </div>
       )}
+      </div>
+
+      {/* PANEL INTERAKTIF PRINSIP DESAIN GRAFIS FLYER (Requested by user) */}
+      <FlyerDesignPrinciplePanel 
+        palette={colors}
+        onSelectPresetColors={handleSelectPresetColors}
+      />
     </div>
   );
 };
